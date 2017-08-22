@@ -23,8 +23,14 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 markdown: kramdown
 theme: jekyll-theme-slate
 theme: minima
-gems:
+plugins:
   - jekyll-default-layout
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
