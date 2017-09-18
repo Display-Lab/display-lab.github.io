@@ -2,7 +2,6 @@
 layout: post
 title:  "KGrid and Message Tailoring System"
 date:   2017-08-22 10:40:00 -0500
-categories: lab update
 ---
 # Landis-Lewis Lab
 
