@@ -3,7 +3,7 @@ layout: post
 title:  "KGrid and Message Tailoring System"
 date:   2017-08-22 10:40:00 -0500
 ---
-# Landis-Lewis Lab
+# DISPLAY Lab
 
 ## Message Tailoring System Components
 
@@ -16,7 +16,7 @@ The components of the methodology for selecting interventions is illustrated bel
 Annotated with properties such as `peer_comparison`, `normaative`, or `achievable_benchmark`
 - **Situation:** The attributes of the situation of the group or individual that is the recipient of the message.  
 Annotate with properties such as `low_performance`, `promotion_focus`, or `obligation_behavior`.
-- **Candiates:** Combination of Situation x Templates.  
+- **Candidates:** Combination of Situation x Templates.  
 The number of candidates is the same as the number of templates as only one situation at a time is considered.  
 A candidate contains all the attributes of its parent template and situation.
 - **ISI:** Intervention-Situation-Interaction is derived from a psychological theory.

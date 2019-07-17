@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Landis Lewis Lab
+title: About Display Lab
 permalink: /about/
 ---
 
