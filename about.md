@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Display Lab
+title: About
 permalink: /about/
 ---
 
@@ -8,7 +8,7 @@ DISPLAY Lab aims to discover how clinical performance feedback works in organiza
 
 The lab is directed by [Zach Landis-Lewis](https://medicine.umich.edu/dept/lhs/zach-landis-lewis-phd-mlis) in the [Department of Learning Heath Sciences](https://medicine.umich.edu/dept/learning-health-sciences) in the University of Michigan Medical School.
 
-##Current members  
+## Current members
 Astrid Fishstrom  
 Colin Gross  
 Shelbi Lisecki  
@@ -17,6 +17,7 @@ Ben Sheppard
 Cooper Stansbury  
 
 ## Past members  
+Emily Dibble  
 John Rincon Hekking  
 Dahee Lee  
 Jessica Zhang  
