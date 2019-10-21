@@ -1,0 +1,50 @@
+---
+---
+
+@import "{{ site.theme }}";
+@import "minima";
+h2 {
+    color: #db5723;
+}
+h2.home {
+    color: blue;
+}
+
+.collaborator-images {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.team-images {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.img-row {
+    text-align: center;
+}
+
+.template-images {
+    display: inline-block;
+    width: 500px;
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.sidebar {
+    width: auto;
+    position: fixed;
+    left:10px;
+    top:100px;
+}
+
+@media (max-width: 1080px) {
+    #sidebar-right {
+        display: none;
+    }
+}
