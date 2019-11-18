@@ -27,25 +27,16 @@ NEGATIVE_TREND_URI = "https://raw.githubusercontent.com/Display-Lab/knowledge-ba
 POSITIVE_TREND_URI = "https://raw.githubusercontent.com/Display-Lab/knowledge-base/master/causal_pathways/positive_trend.json"
 
 # List of causal pathways urls
-
-CP_RELATIVE_DIR = File.join(File.dirname(__FILE__), '..', 'causal_pathways' )
 CP_RELATIVE_DOCS_DIR = File.join(File.dirname(__FILE__), '..', '_causal_paths' )
-
-CP_DIR = File.absolute_path CP_RELATIVE_DIR
-CP_DOCS = File.absolute_path CP_RELATIVE_DOCS_DIR
 
 CP_HTML_TEMPLATE = <<~HEREDOC
 <!DOCTYPE html>
-<html>
-  <body>
-    <details>
-    <summary><b><%= name %></b></summary>
-    <pre>
-    <%= content %>
-    </pre>
-    </details>
-  </body>
-</html>
+<details>
+<summary><b><%= name %></b></summary>
+<pre>
+<%= content %>
+</pre>
+</details>
 HEREDOC
 
 CP_INDEX_TEMPLATE = <<~IDXDOC
@@ -118,23 +109,23 @@ end
 def retrieve_causal_pathways(uri)
   case uri
   when BENCH_ACHIEVEMEMENT_URI
-    file_path = File.join(CP_RELATIVE_DIR, "bench_achievement.json")
+    file_path = File.join(Dir.tmpdir, "bench_achievement.json")
   when BENCH_DIFF_URI
-    file_path = File.join(CP_RELATIVE_DIR, "bench_diff.json")
+    file_path = File.join(Dir.tmpdir, "bench_diff.json")
   when CONSISTENT_HIGH_URI
-    file_path = File.join(CP_RELATIVE_DIR, "consistent_high.json")
+    file_path = File.join(Dir.tmpdir, "consistent_high.json")
   when CONSISTENT_LOW_URI
-    file_path = File.join(CP_RELATIVE_DIR, "consistent_low.json")
+    file_path = File.join(Dir.tmpdir, "consistent_low.json")
   when GOAL_ACHIEVEMENT_URI
-    file_path = File.join(CP_RELATIVE_DIR, "goal_achievement.json")
+    file_path = File.join(Dir.tmpdir, "goal_achievement.json")
   when GOAL_DIFF_URI
-    file_path = File.join(CP_RELATIVE_DIR, "goal_diff.json")
+    file_path = File.join(Dir.tmpdir, "goal_diff.json")
   when HIGH_BENCH_URI
-    file_path = File.join(CP_RELATIVE_DIR, "high_bench.json")
+    file_path = File.join(Dir.tmpdir, "high_bench.json")
   when NEGATIVE_TREND_URI
-    file_path = File.join(CP_RELATIVE_DIR, "negative_trend.json")
+    file_path = File.join(Dir.tmpdir, "negative_trend.json")
   when POSITIVE_TREND_URI
-    file_path = File.join(CP_RELATIVE_DIR, "positive_trend.json")
+    file_path = File.join(Dir.tmpdir, "positive_trend.json")
   else
     puts "bad uri"
     abort
@@ -232,8 +223,8 @@ high_bench = retrieve_causal_pathways HIGH_BENCH_URI
 negative_trend = retrieve_causal_pathways NEGATIVE_TREND_URI
 positive_trend = retrieve_causal_pathways POSITIVE_TREND_URI
 
-puts "Looking in #{CP_DIR} \n"
-cp_list = read_json_from_dir CP_DIR
+puts "Looking in #{Dir.tmpdir} \n"
+cp_list = read_json_from_dir Dir.tmpdir
 # Do label substitutions in values
 cps_subbed = cp_list.map{|cp| substitute_labels(cp, all_labels) }
 
@@ -247,12 +238,5 @@ cps_paths = cp_list.map{|cp| generate_cp_html_path cp}
 Hash[cps_paths.zip(cps_html)].each do |path,html|
   File.open(path, 'w'){|file| file << html }
 end
-
-# Create index html
-index = generate_index_html(cps_subbed)
-
-# Write index to disk
-index_path = File.join(CP_RELATIVE_DOCS_DIR, 'index.html')
-File.open(index_path,'w'){|file| file << index}
 
 puts "Done."
