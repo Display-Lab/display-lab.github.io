@@ -4,26 +4,12 @@ title: Knowledgebase
 permalink: /knowledgebase/
 ---
 
-An information content entity about a process through which an implementation
-strategy operates to affect desired implementation outcomes.
+DISPLAY Lab is developing a knowledgebase to support automated message tailoring for clinical performance communication. The knowledgebase contains computer-interpretable description of resources for message tailoring and knowledge that is used to tailor messages. The key types of knowledge in the knowledgebase are:
 
-We have 9 Causal Pathways. Each Causal Pathway has a specific mechanism of
-action/implementation strategy and unique combination of preconditions.
+1. How feedback messages work (causal pathway models)
+2. Information content of performance communication (performance levels, gaps, and trends)
+3. Form of performance communication (text, visual displays and communication channels)
 
+Three ontologies are used to define and describe the elements of performance communication that are referenced in the knowledgebase. [The Performance Summary Display Ontology (PSDO)](https://github.com/Display-Lab/psdo) defines the information content and form of performance communication. [The Causal Pathway Ontology (CPO)](https://github.com/Display-Lab/cpo) defines the parts of a causal pathway model and their influence process. A third ontology functions as contains in-process working definitions and relationships that are important for message tailoring, but not yet well-defined enough to be placed in PSDO, CPO, or another ontology, called the [Somewhat Lackadaisically Organized Working Miscellaneous Ontology](https://github.com/Display-Lab/slowmo).
 
-## Dictionary
-**Precondition** : An information content entity that is necessary for a mechanism
-or implementation outcome to be activated.
-
-**Moderator** : An information content entity that may affect the level of
-influence of an implementation strategy.
-
-**Proximal Outcome** : An information content entity that represents the outcome
-of the implementation strategy that is realized because of its specific mechanism
-of action, and is the most immediate, observable outcome in the causal pathway.
-
-**Distal Outcome** : An information content entity that represents the outcome
-that represents the outcome that a candidate intervention is designed to achieve.
-
-**Key Message** : Lorem ipsum dolor sit amet, consecteur adipiscing elit. Integer
-feugiat ex nec dui gravida cursus.
+The content of the knowledgebase is displayed below, generated directly from computer-interpretable statements encoded in JSON. This page will display the content of the most recent version of the knowledgebase.
