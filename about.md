@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 DISPLAY Lab aims to discover how clinical performance feedback works in
-organizations. The lab's research focus is on developing software for digital
-behavior change interventions to make clinical performance feedback useful,
+health systems. Our focus is on developing software for digital
+health interventions to make clinical performance feedback useful,
 used and effective.
 
 The lab is directed by
