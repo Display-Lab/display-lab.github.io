@@ -3,16 +3,7 @@ layout: about
 title: About
 permalink: /about/
 ---
-DISPLAY Lab aims to discover how clinical performance feedback works in
-health systems. Our focus is on developing software for digital
-health interventions to make clinical performance feedback useful,
-used and effective.
-
-The lab is directed by
-[Zach Landis-Lewis](https://medicine.umich.edu/dept/lhs/zach-landis-lewis-phd-mlis)
-in the [Department of Learning Heath Sciences](https://medicine.umich.edu/dept/learning-health-sciences)
-in the University of Michigan Medical School.
-
+The DISPLAY (Design, Implementation, Systems, Performance, Learning, And whY) Lab at the [Department of Learning Heath Sciences](https://medicine.umich.edu/dept/learning-health-sciences) at the University of Michigan Medical School was founded in 2015. It focuses on automated tailored performance feedback research in health with a goal of improving clinician performance. The DISPLAY Lab is directed by [Zach Landis-Lewis](https://medicine.umich.edu/dept/lhs/zach-landis-lewis-phd-mlis), PhD, MLIS and includes staff and students. The DISPLAY Lab frequently collaborates with other faculty and labs
 
 [//]: # (## Research)
 [//]: # (Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor)
